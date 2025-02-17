@@ -1,5 +1,5 @@
 {
   "appId": "com.cookeasy.app",
   "appName": "CookEasy",
-  "webDir": "next"
+  "webDir": "frontend/out"
 }
