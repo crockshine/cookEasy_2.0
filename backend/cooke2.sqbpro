@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="cooke2.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="3173"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="Category" custom_title="0" dock_id="2" table="4,8:mainCategory"/><table title="Category" custom_title="0" dock_id="1" table="4,8:mainCategory"/><dock_state state="000000ff00000000fd00000001000000020000053500000398fc0100000001fc00000000000005350000012e00fffffffa000000010100000002fb000000160064006f0063006b00420072006f00770073006500310100000000ffffffff0000012e00fffffffb000000160064006f0063006b00420072006f00770073006500320100000000ffffffff0000012e00ffffff000005350000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Category" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="35"/><column index="2" value="35"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">CREATE TABLE User (
+	&quot;id&quot; SERIAL PRIMARY KEY,
+	&quot;name&quot; VARCHAR(255) NOT NULL,
+	email VARCHAR(255)
+);
+
+CREATE TABLE Category (
+	id SERIAL PRIMARY KEY,
+	title VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Recipe (
+	id SERIAL PRIMARY KEY,
+	title VARCHAR(255) NOT NULL,
+	description VARCHAR(255),
+	steps TEXT[],
+
+	likes INTEGER DEFAULT 0,
+	dislikes INTEGER DEFAULT 0,
+	
+	category_id INTEGER REFERENCES Category(id) ON DELETE SET NULL,
+	visible BOOLEAN DEFAULT true,
+	user_id INTEGER REFERENCES User(id) ON DELETE SET NULL,
+
+	fat INTEGER NOT NULL DEFAULT -1,
+	protein INTEGER NOT NULL DEFAULT -1,
+	carb INTEGER NOT NULL DEFAULT -1
+);
+
+CREATE TABLE PhotoToRecipe (
+	id SERIAL PRIMARY KEY,
+	photo VARCHAR(255) NOT NULL,
+	recipe_id INTEGER REFERENCES Recipe(Id)
+);</sql><sql name="SQL 5*">CREATE TABLE ingredient (
+	id SERIAL PRIMARY KEY,
+	measure_unit VARCHAR(255) NOT NULL,
+	&quot;value&quot; DECIMAL NOT NULL
+);
+
+CREATE TABLE Comment (
+	id SERIAL PRIMARY KEY,
+	user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
+	recipe_id INTEGER REFERENCES recipe(id) ON DELETE CASCADE,
+	text TEXT,
+	create_date TEXT DEFAULT (datetime('now'))
+);
+
+CREATE TABLE IngredientToRecipe (
+	id SERIAL PRIMARY KEY,
+	ingredient_id INTEGER REFERENCES ingredient(id) ON DELETE CASCADE NOT NULL,
+	recipe_id INTEGER REFERENCES recipe(id) ON DELETE CASCADE NOT NULL
+);</sql><sql name="SQL 3">CREATE TABLE Otp (
+	id SERIAL PRIMARY KEY,
+	user_id INTEGER REFERENCES User(id) ON DELETE CASCADE,
+	code INTEGER NOT NULL,
+	create_date TEXT DEFAULT (datetime('now')),
+	expired BOOLEAN DEFAULT (false)
+);
+CREATE TABLE Auth (
+	id SERIAL PRIMARY KEY,
+	user_id INTEGER REFERENCES User(id) ON DELETE CASCADE,
+	token VARCHAR(75) NOT NULL
+);</sql><current_tab id="0"/></tab_sql></sqlb_project>
