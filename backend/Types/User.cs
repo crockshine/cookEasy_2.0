@@ -4,7 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace backend.Types
 {
-    public class User
+    public class User : BaseType
     {
         [Key]
         [NotNull]

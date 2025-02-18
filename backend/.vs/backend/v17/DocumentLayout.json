@@ -3,24 +3,40 @@
   "WorkspaceRootPath": "A:\\Web projects\\cookEasy_2.0\\backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{16C1BABB-73FC-4184-BAD5-3D1F9358C345}|backend.csproj|a:\\web projects\\cookeasy_2.0\\backend\\types\\otp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16C1BABB-73FC-4184-BAD5-3D1F9358C345}|backend.csproj|solutionrelative:types\\otp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16C1BABB-73FC-4184-BAD5-3D1F9358C345}|backend.csproj|a:\\web projects\\cookeasy_2.0\\backend\\types\\ingredienttorecipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16C1BABB-73FC-4184-BAD5-3D1F9358C345}|backend.csproj|solutionrelative:types\\ingredienttorecipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{16C1BABB-73FC-4184-BAD5-3D1F9358C345}|backend.csproj|a:\\web projects\\cookeasy_2.0\\backend\\types\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{16C1BABB-73FC-4184-BAD5-3D1F9358C345}|backend.csproj|solutionrelative:types\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{16C1BABB-73FC-4184-BAD5-3D1F9358C345}|backend.csproj|a:\\web projects\\cookeasy_2.0\\backend\\providers\\userprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16C1BABB-73FC-4184-BAD5-3D1F9358C345}|backend.csproj|solutionrelative:providers\\userprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{16C1BABB-73FC-4184-BAD5-3D1F9358C345}|backend.csproj|a:\\web projects\\cookeasy_2.0\\backend\\types\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16C1BABB-73FC-4184-BAD5-3D1F9358C345}|backend.csproj|solutionrelative:types\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{16C1BABB-73FC-4184-BAD5-3D1F9358C345}|backend.csproj|a:\\web projects\\cookeasy_2.0\\backend\\providers\\providersmarshal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16C1BABB-73FC-4184-BAD5-3D1F9358C345}|backend.csproj|solutionrelative:providers\\providersmarshal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{16C1BABB-73FC-4184-BAD5-3D1F9358C345}|backend.csproj|a:\\web projects\\cookeasy_2.0\\backend\\types\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16C1BABB-73FC-4184-BAD5-3D1F9358C345}|backend.csproj|solutionrelative:types\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{16C1BABB-73FC-4184-BAD5-3D1F9358C345}|backend.csproj|a:\\web projects\\cookeasy_2.0\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16C1BABB-73FC-4184-BAD5-3D1F9358C345}|backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{16C1BABB-73FC-4184-BAD5-3D1F9358C345}|backend.csproj|a:\\web projects\\cookeasy_2.0\\backend\\types\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16C1BABB-73FC-4184-BAD5-3D1F9358C345}|backend.csproj|solutionrelative:types\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{16C1BABB-73FC-4184-BAD5-3D1F9358C345}|backend.csproj|a:\\web projects\\cookeasy_2.0\\backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16C1BABB-73FC-4184-BAD5-3D1F9358C345}|backend.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{16C1BABB-73FC-4184-BAD5-3D1F9358C345}|backend.csproj|a:\\web projects\\cookeasy_2.0\\backend\\types\\ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16C1BABB-73FC-4184-BAD5-3D1F9358C345}|backend.csproj|solutionrelative:types\\ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16C1BABB-73FC-4184-BAD5-3D1F9358C345}|backend.csproj|a:\\web projects\\cookeasy_2.0\\backend\\types\\phototorecipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16C1BABB-73FC-4184-BAD5-3D1F9358C345}|backend.csproj|solutionrelative:types\\phototorecipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16C1BABB-73FC-4184-BAD5-3D1F9358C345}|backend.csproj|a:\\web projects\\cookeasy_2.0\\backend\\types\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16C1BABB-73FC-4184-BAD5-3D1F9358C345}|backend.csproj|solutionrelative:types\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,67 +46,121 @@
       "DocumentGroups": [
         {
           "DockedWidth": 210,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "A:\\Web projects\\cookEasy_2.0\\backend\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "A:\\Web projects\\cookEasy_2.0\\backend\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
+              "Title": "Auth.cs",
+              "DocumentMoniker": "A:\\Web projects\\cookEasy_2.0\\backend\\Types\\Auth.cs",
+              "RelativeDocumentMoniker": "Types\\Auth.cs",
+              "ToolTip": "A:\\Web projects\\cookEasy_2.0\\backend\\Types\\Auth.cs",
+              "RelativeToolTip": "Types\\Auth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T14:44:46.224Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "A:\\Web projects\\cookEasy_2.0\\backend\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "A:\\Web projects\\cookEasy_2.0\\backend\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T14:44:32.256Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProvidersMarshal.cs",
-              "DocumentMoniker": "A:\\Web projects\\cookEasy_2.0\\backend\\Providers\\ProvidersMarshal.cs",
-              "RelativeDocumentMoniker": "Providers\\ProvidersMarshal.cs",
-              "ToolTip": "A:\\Web projects\\cookEasy_2.0\\backend\\Providers\\ProvidersMarshal.cs",
-              "RelativeToolTip": "Providers\\ProvidersMarshal.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T14:44:07.47Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserProvider.cs",
-              "DocumentMoniker": "A:\\Web projects\\cookEasy_2.0\\backend\\Providers\\UserProvider.cs",
-              "RelativeDocumentMoniker": "Providers\\UserProvider.cs",
-              "ToolTip": "A:\\Web projects\\cookEasy_2.0\\backend\\Providers\\UserProvider.cs",
-              "RelativeToolTip": "Providers\\UserProvider.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T14:43:51.719Z",
+              "WhenOpened": "2025-02-18T12:17:06.522Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Otp.cs",
+              "DocumentMoniker": "A:\\Web projects\\cookEasy_2.0\\backend\\Types\\Otp.cs",
+              "RelativeDocumentMoniker": "Types\\Otp.cs",
+              "ToolTip": "A:\\Web projects\\cookEasy_2.0\\backend\\Types\\Otp.cs",
+              "RelativeToolTip": "Types\\Otp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T12:16:48.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IngredientToRecipe.cs",
+              "DocumentMoniker": "A:\\Web projects\\cookEasy_2.0\\backend\\Types\\IngredientToRecipe.cs",
+              "RelativeDocumentMoniker": "Types\\IngredientToRecipe.cs",
+              "ToolTip": "A:\\Web projects\\cookEasy_2.0\\backend\\Types\\IngredientToRecipe.cs",
+              "RelativeToolTip": "Types\\IngredientToRecipe.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T12:16:33.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "A:\\Web projects\\cookEasy_2.0\\backend\\Types\\Comment.cs",
+              "RelativeDocumentMoniker": "Types\\Comment.cs",
+              "ToolTip": "A:\\Web projects\\cookEasy_2.0\\backend\\Types\\Comment.cs",
+              "RelativeToolTip": "Types\\Comment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T12:16:06.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Ingredient.cs",
+              "DocumentMoniker": "A:\\Web projects\\cookEasy_2.0\\backend\\Types\\Ingredient.cs",
+              "RelativeDocumentMoniker": "Types\\Ingredient.cs",
+              "ToolTip": "A:\\Web projects\\cookEasy_2.0\\backend\\Types\\Ingredient.cs",
+              "RelativeToolTip": "Types\\Ingredient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T12:14:34.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PhotoToRecipe.cs",
+              "DocumentMoniker": "A:\\Web projects\\cookEasy_2.0\\backend\\Types\\PhotoToRecipe.cs",
+              "RelativeDocumentMoniker": "Types\\PhotoToRecipe.cs",
+              "ToolTip": "A:\\Web projects\\cookEasy_2.0\\backend\\Types\\PhotoToRecipe.cs",
+              "RelativeToolTip": "Types\\PhotoToRecipe.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T12:14:12.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Recipe.cs",
+              "DocumentMoniker": "A:\\Web projects\\cookEasy_2.0\\backend\\Types\\Recipe.cs",
+              "RelativeDocumentMoniker": "Types\\Recipe.cs",
+              "ToolTip": "A:\\Web projects\\cookEasy_2.0\\backend\\Types\\Recipe.cs",
+              "RelativeToolTip": "Types\\Recipe.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T12:13:50.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Category.cs",
+              "DocumentMoniker": "A:\\Web projects\\cookEasy_2.0\\backend\\Types\\Category.cs",
+              "RelativeDocumentMoniker": "Types\\Category.cs",
+              "ToolTip": "A:\\Web projects\\cookEasy_2.0\\backend\\Types\\Category.cs",
+              "RelativeToolTip": "Types\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T12:13:35.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "User.cs",
               "DocumentMoniker": "A:\\Web projects\\cookEasy_2.0\\backend\\Types\\User.cs",
               "RelativeDocumentMoniker": "Types\\User.cs",
               "ToolTip": "A:\\Web projects\\cookEasy_2.0\\backend\\Types\\User.cs",
               "RelativeToolTip": "Types\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-15T14:41:44.589Z",
               "EditorCaption": ""

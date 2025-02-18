@@ -6,7 +6,7 @@
 
 CREATE TABLE Category (
 	id SERIAL PRIMARY KEY,
-	title VARCHAR(255)
+	title VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE Recipe (
@@ -29,7 +29,7 @@ CREATE TABLE Recipe (
 
 CREATE TABLE PhotoToRecipe (
 	id SERIAL PRIMARY KEY,
-	photo VARCHAR(255),
+	photo VARCHAR(255) NOT NULL,
 	recipe_id INTEGER REFERENCES Recipe(Id)
 );</sql><sql name="SQL 2">CREATE TABLE ingredient (
 	id SERIAL PRIMARY KEY,
