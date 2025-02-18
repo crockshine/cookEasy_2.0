@@ -16,10 +16,6 @@ namespace backend.Types
         public string Name { get; set; }
 
         [NotNull]
-        [Column("password")]
-        public string Password { get; set; }
-
-        [NotNull]
         [Column("email")]
         public string Email { get; set; }
     }
