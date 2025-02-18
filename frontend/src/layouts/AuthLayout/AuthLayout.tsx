@@ -8,6 +8,7 @@ import {useActionState} from "react";
 import {validateSignUpForm} from "@/src/hooks/validateSignUpForm";
 import {validateSignInForm} from "@/src/hooks/validateSignInForm";
 
+
 const AuthLayout = () => {
     const handleSubmit = async (message: string, formData: FormData) => {
         if (isSignUp) {
@@ -20,49 +21,71 @@ const AuthLayout = () => {
     const [message, handleAction, isPending] = useActionState(handleSubmit, "")
     const [isSignUp, setIsSignUp] = useState<boolean>(true)
 
+    const SignUpText = () => {
+        return (
+            <span style={{
+                color: 'hsl(var(--muted-text))',
+                textAlign: "center"
+            }}>
+                Есть аккаунт? <span style={{textDecoration: 'underline'}}
+                                    onClick={() => setIsSignUp(false)}>
+                    Войти
+                </span>
+            </span>
+        )
+    }
+
+    const SignInText = () => {
+        return (
+            <span style={{
+                color: 'hsl(var(--muted-text))',
+                textAlign: "center"
+            }}>
+                Нет аккаунта? <span style={{textDecoration: 'underline'}}
+                                    onClick={() => setIsSignUp(true)}>
+                    Зарегистрироваться
+                </span>
+            </span>
+        )
+    }
+
     return (
         <div className={styles.authLayout}>
             <div className={styles.infoBlock}>
                 {
                     isSignUp
-                        ? <b>Регистрация</b>
-                        : <b>Вход</b>
+                        ? <h1><b>Регистрация</b></h1>
+                        : <h1><b>Вход</b></h1>
                 }
             </div>
 
             <form action={handleAction} className={styles.form}>
                 {
                     isSignUp
-                        ? <SignUp/>
-                        : <SignIn/>
+                        ? <>
+                            <SignUp/>
+                            <SignUpText/>
+                        </>
+                        : <>
+                            <SignIn/>
+                            <SignInText/>
+                        </>
                 }
 
                 {message}
 
-                {
-                    isSignUp
-                        ?
-                        <span>Есть аккаунт? <span
-                            style={{textDecoration: 'underline'}}
-                            onClick={() => setIsSignUp(false)}
-                        >
-                                Войти
-                            </span>
-                        </span>
-                        :
-                        <span>Нет аккаунта? <span
-                            style={{textDecoration: 'underline'}}
-                            onClick={() => setIsSignUp(true)}
-                        >
-                                Зарегистрироваться
-                            </span>
-                        </span>
-                }
+                <div className={styles.groupContainer}>
 
-                <Button variant="todo" type='submit' disabled={isPending}>
-                    Продолжить
-                </Button>
+                    <Button variant="todo" type='submit' disabled={isPending} className={'w-full'}>
+                        <b>Продолжить</b>
+                    </Button>
+
+                </div>
+
             </form>
+            <div className={styles.decorateCircle1}/>
+            <div className={styles.decorateCircle2}/>
+
         </div>
     )
 }

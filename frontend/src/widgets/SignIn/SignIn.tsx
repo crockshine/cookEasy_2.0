@@ -3,7 +3,7 @@ import InputWithLabel from "@/src/components/shared/InputWithLabel/InputWithLabe
 
 const SignUp = () => {
     return (
-        <div className={styles.inputBlock}>
+        <div className={styles.groupContainer}>
             <InputWithLabel
                 label={'Электронная почта'}
                 placeholder={'ящичек_1111@mail.ru'}

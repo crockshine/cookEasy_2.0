@@ -1,3 +1,4 @@
+import styles from './InputWithLabel.module.css'
 import { Input } from "@/src/components/ui/input"
 
 type InputType =
@@ -15,8 +16,8 @@ interface IInputWithLabelProps{
 
 const InputWithLabel = ({label, placeholder, name, type, required}: IInputWithLabelProps) => {
     return (
-        <div className="grid w-full max-w-sm items-center gap-1.5">
-            <label htmlFor={label}>{label}</label>
+        <div className={styles.inputContainer}>
+            <label htmlFor={label} style={{color: 'hsl(var(--muted-text))'}}><b>{label}</b></label>
             <Input
                 type={type}
                 id={label}
