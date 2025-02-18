@@ -1,4 +1,4 @@
-import styles from '@/src/layouts/AuthLayout/AuthLayout.module.css'
+import styles from '@/src/widgets/AuthForm/AuthForm.module.css'
 import InputWithLabel from "@/src/components/shared/InputWithLabel/InputWithLabel";
 
 const SignUp = () => {

@@ -17,7 +17,7 @@ interface IInputWithLabelProps{
 const InputWithLabel = ({label, placeholder, name, type, required}: IInputWithLabelProps) => {
     return (
         <div className={styles.inputContainer}>
-            <label htmlFor={label} style={{color: 'hsl(var(--muted-text))'}}><b>{label}</b></label>
+            <label htmlFor={label} style={{color: 'hsl(var(--primary))'}}><b>{label}</b></label>
             <Input
                 type={type}
                 id={label}

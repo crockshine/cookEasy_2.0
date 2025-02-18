@@ -7,3 +7,27 @@
     overflow: hidden;
     position: relative;
 }
+
+.decorateCircle1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 80%;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    background-color: #fde8bb;
+    transform: translateX(-50%) translateY(50%);
+    z-index: -1;
+}
+
+.decorateCircle2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 80%;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    background-color: #ffe0d6;
+    transform: translateX(50%) translateY(-50%);
+    z-index: -1;
+}
