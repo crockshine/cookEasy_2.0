@@ -6,11 +6,6 @@ namespace backend.Types
 {
     public class User : BaseType
     {
-        [Key]
-        [NotNull]
-        [Column("id")]
-        public int Id { get; set; }
-
         [NotNull]
         [Column("name")]
         public string Name { get; set; }

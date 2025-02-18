@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using backend.Providers;
+using backend.Types;
+using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -10,34 +12,62 @@ namespace backend.Controllers
     {
         // GET: api/<UserController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public ActionResult<IEnumerable<User>> Get()
         {
-            return new string[] { "value1", "value2" };
+            try
+            {
+                var data = ProvidersMarshal.UserProvider.ListAll();
+                return data != null ? Ok(data) : NotFound($"Данные не найдены.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         // GET api/<UserController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public ActionResult<User> Get(int id)
         {
-            return "value";
+            try
+            {
+                var data = ProvidersMarshal.UserProvider.Get(id);
+                return data != null ? Ok(data) : NotFound($"Данные не найдены.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         // POST api/<UserController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public ActionResult<User> Post([FromBody] User value)
         {
-        }
-
-        // PUT api/<UserController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
+            try
+            {
+                var data = ProvidersMarshal.UserProvider.Add(value);
+                return data != null ? Ok(data) : NotFound($"Данные не найдены.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         // DELETE api/<UserController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public ActionResult Delete(int id)
         {
+            try
+            {
+                ProvidersMarshal.UserProvider.Delete(id);
+                return Ok($"{id} упешно удален.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 }

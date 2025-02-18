@@ -5,10 +5,6 @@ namespace backend.Types
 {
     public class PhotoToRecipe : BaseType
     {
-        [Key]
-        [Column("id")]
-        public int Id { get; set; }
-
         [Column("photo")]
         [Required]
         public string Photo { get; set; }

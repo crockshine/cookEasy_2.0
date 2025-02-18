@@ -2,7 +2,7 @@
 
 namespace backend.Providers
 {
-    public class UserProvider : ProviderBase<User>
+    public class OtpProvider : ProviderBase<Otp>
     {
     }
 }

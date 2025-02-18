@@ -5,10 +5,6 @@ namespace backend.Types
 {
     public class IngredientToRecipe : BaseType
     {
-        [Key]
-        [Column("id")]
-        public int Id { get; set; }
-
         [Column("ingredient_id")]
         public int IngredientId { get; set; }
         public Ingredient Ingredient { get; set; }
