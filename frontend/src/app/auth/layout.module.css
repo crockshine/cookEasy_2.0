@@ -8,6 +8,16 @@
     position: relative;
 }
 
+.decorateBlock{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    z-index: -1;
+}
+
 .decorateCircle1{
     position: absolute;
     bottom: 0;

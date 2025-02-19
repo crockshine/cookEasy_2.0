@@ -1,12 +1,15 @@
+'use client'
 import styles from './AuthLayout.module.css'
-import React, {PropsWithChildren} from 'react';
+import React, {PropsWithChildren, useEffect, useRef} from 'react';
+import {usePathname} from "next/navigation";
 
 interface IAuthLayoutProps extends PropsWithChildren {
     title: string,
-    subtitle?: string
+    subtitle?: string,
 }
 
 const AuthLayout = ({children, title, subtitle}: IAuthLayoutProps) => {
+
     return (
         <div className={styles.authLayout}>
             <div className={styles.infoBlock}>
@@ -16,6 +19,7 @@ const AuthLayout = ({children, title, subtitle}: IAuthLayoutProps) => {
                 }
             </div>
             {children}
+
         </div>
     )
 }

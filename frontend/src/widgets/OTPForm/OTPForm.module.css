@@ -23,3 +23,9 @@
     gap: 8px;
 }
 
+.arrowLeft{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
