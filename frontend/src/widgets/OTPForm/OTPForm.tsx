@@ -4,40 +4,63 @@ import React, {useActionState, useEffect, useState} from 'react';
 import {Button} from "@/src/components/ui/button";
 import {useRouter} from "next/navigation";
 import OtpInput from "@/src/components/shared/OTP/OTPInput";
+import {checkOTP} from "@/src/api/otp";
 
 const OTPForm = () => {
+    const [timer, setTimer] = useState<number>(3)
     const router = useRouter()
-    const handleSubmit = async (prevData: string, formData: FormData) => {
-        return
+    const handleCheck= async (prevData: string, formData: FormData) => {
+        const OTPCode = formData.get('otp') as string
+        try {
+            await checkOTP(OTPCode)
+            return router.replace('/')
+        }catch (e: object){
+            return 'Что-то пошло не так, повторите попытку еще раз'
+        }
     }
-    const [errorMessage, handleAction, isPending] = useActionState(handleSubmit, null)
-    const [timer, setTimer] = useState<number>(40)
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setTimer(prevState => prevState - 1)        }, 1000)
 
-        return clearInterval(interval)
+    const [message, onCheck, isPending] = useActionState(handleCheck, '')
+
+    let intervalId
+    const timeout = () => {
+        intervalId = setInterval(() => {
+            setTimer(prevState => {
+                if (prevState <= 1) {
+                    clearInterval(intervalId)
+                }
+                return prevState - 1
+            })
+        }, 1000)
+    }
+    useEffect(() => {
+        timeout()
+        return () => clearInterval(intervalId)
     }, [])
 
     return (
-            <form action={handleAction} className={styles.form}>
-                <OtpInput />
-                {errorMessage}
+        <form className={styles.form}>
+            <OtpInput/>
+            {message}
 
-                <div className={styles.groupContainer}>
+            <div className={styles.groupContainer}>
 
-                    <Button variant="todo" type='submit' disabled={isPending} className={'w-full'}>
-                        <b>Проверить</b>
-                    </Button>
-                    <Button variant="secondary" type='submit' className={'w-full'}>
-                        <b>Отправить заново {}</b>
+                <Button variant="todo"  disabled={isPending} className={'w-full'} formAction={onCheck}>
+                    {
+                        isPending
+                            ? <b>Проверка</b>
+                            : <b>Проверить</b>
+                    }
 
-                    </Button>
-
-                </div>
-
-            </form>
+                </Button>
+                <Button variant="secondary"  className={'w-full'} disabled={timer > 0}>
+                    <b>Отправить заново
+                        {
+                            timer > 0 && <span> через {timer}</span>
+                        }
+                    </b>
+                </Button>
+            </div>
+        </form>
     )
 };
-
 export default OTPForm;

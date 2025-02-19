@@ -7,7 +7,7 @@ import {
 
 const OtpInput = () => {
     return (
-        <InputOTP maxLength={4}>
+        <InputOTP maxLength={4} name={'otp'} required>
             <InputOTPSlot index={0}/>
             <InputOTPSlot index={1}/>
             <InputOTPSlot index={2}/>

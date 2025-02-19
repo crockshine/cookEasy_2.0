@@ -5,8 +5,8 @@ import SignUp from "@/src/widgets/SignUp/SignUp";
 import SignIn from "@/src/widgets/SignIn/SignIn";
 import {Button} from "@/src/components/ui/button";
 import {useRouter} from "next/navigation";
-import {validateSignUpForm} from "@/src/hooks/validateSignUpForm";
-import {validateSignInForm} from "@/src/hooks/validateSignInForm";
+import {SignUpUser} from "@/src/api/sign-up";
+import {SignInUser} from "@/src/api/sign-in";
 
 interface IAuthFormProps{
     isSignUp: boolean,
@@ -15,14 +15,19 @@ interface IAuthFormProps{
 const AuthForm = ({setIsSignUp, isSignUp}: IAuthFormProps) => {
     const router = useRouter()
     const handleSubmit = async (prevData: string, formData: FormData) => {
-        if (isSignUp) {
-            const errorMsg = await validateSignUpForm(prevData, formData)
-            if (errorMsg !== null) return errorMsg
-            return router.push('/auth/otp')
-        } else {
-            const errorMsg = await validateSignInForm(prevData, formData)
-            if (errorMsg !== null) return errorMsg
-            return router.push('/auth/otp')
+        const email = formData.get('email') as string
+        const name = formData.get('name') as string | null
+
+        try{
+            if (isSignUp) {
+                if (!name) return
+                await SignUpUser({email, name})
+            } else {
+                await SignInUser({email})
+            }
+            return router.replace('/auth/otp')
+        } catch (e: object){
+            return 'Что-то пошло не так'
         }
     }
 
@@ -59,18 +64,21 @@ const AuthForm = ({setIsSignUp, isSignUp}: IAuthFormProps) => {
     return (
         <form action={handleAction} className={styles.form}>
             {
-                isSignUp ? <SignUp/> : <SignIn/>
+                isSignUp
+                    ? <SignUp/>
+                    : <SignIn/>
             }
 
             {errorMessage}
 
             <div className={styles.groupContainer}>
-
                 <Button variant="todo" type='submit' disabled={isPending} className={'w-full'}>
                     <b>Продолжить</b>
                 </Button>
                 {
-                    isSignUp ? <SignUpText/> : <SignInText/>
+                    isSignUp
+                        ? <SignUpText/>
+                        : <SignInText/>
                 }
             </div>
         </form>
