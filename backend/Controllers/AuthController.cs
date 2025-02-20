@@ -56,15 +56,15 @@ namespace backend.Controllers
         [HttpPost("verify")]
         public ActionResult<Auth> VerifyOtp([FromBody] VerifyOtpDto data)
         {
-            try
-            {
+            /*try
+            {*/
                 var result = AuthService.VerifyOtp(data);
                 return result != null ? Ok(result) : NotFound("Ошибка подтверждения OTP кода.");
-            }
+            /*}
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
-            }
+            }*/
         }
 
         [HttpGet("{token}")]

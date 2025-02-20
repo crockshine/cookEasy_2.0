@@ -13,7 +13,7 @@
 
   <ItemGroup>
     <None Update="cooke2.db">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 

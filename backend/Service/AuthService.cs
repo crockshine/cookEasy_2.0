@@ -42,9 +42,19 @@ namespace backend.Service
             User? user = ProvidersMarshal.UserProvider.GetByEmail(data.Email);
 
             // Проверяем, есть ли уже пользователь с таким email:
-            if (user != null && user.Verify)
+            if (user != null)
             {
-                throw new UserAlreadyExitsException(data.Email);
+                // Если пользователь уже зареган и авторизован
+                if (user.Verify)
+                {
+                    throw new UserAlreadyExitsException(data.Email);
+                }
+
+                // Если пользователь зареган, но еще не авторизован
+                else
+                {
+                    ProvidersMarshal.UserProvider.Delete(user.Id);
+                }
             }
 
             // Добавляем запись о пользователе:
