@@ -13,5 +13,8 @@ namespace backend.Types
         [NotNull]
         [Column("email")]
         public string Email { get; set; }
+
+        [Column("verify_state")]
+        public bool Verify { get; set; } = false;
     }
 }

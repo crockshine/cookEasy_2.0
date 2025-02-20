@@ -12,7 +12,7 @@ namespace backend.Providers
             return context.GetDbSet(typeof(MType)) as DbSet<MType> ?? throw new InvalidOperationException("DbSet not found.");
         }
 
-        public IEnumerable<MType> ListAll()
+        public virtual IEnumerable<MType> ListAll()
         {
             using (DbAppContext context = DbAppContext.MakeContext())
             {
@@ -20,7 +20,7 @@ namespace backend.Providers
             }
         }
 
-        public MType? Get(int id)
+        public virtual MType? Get(int id)
         {
             using (DbAppContext context = DbAppContext.MakeContext())
             {
@@ -28,7 +28,7 @@ namespace backend.Providers
             }
         }
 
-        public MType Add(MType item)
+        public virtual MType Add(MType item)
         {
             using (DbAppContext context = DbAppContext.MakeContext())
             {
@@ -39,7 +39,7 @@ namespace backend.Providers
             }
         }
 
-        public void Delete(int id)
+        public virtual void Delete(int id)
         {
             using (DbAppContext context = DbAppContext.MakeContext())
             {
@@ -54,7 +54,7 @@ namespace backend.Providers
             }
         }
 
-        public MType Update(MType item)
+        public virtual MType Update(MType item)
         {
             using (DbAppContext context = DbAppContext.MakeContext())
             {

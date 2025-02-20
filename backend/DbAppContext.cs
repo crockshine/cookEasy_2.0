@@ -5,15 +5,15 @@ namespace backend
 {
     public class DbAppContext : DbContext
     {
-        public DbSet<User> Users { get; set; } = null!;
-        public DbSet<Category> Categories { get; set; } = null!;
-        public DbSet<Recipe> Recipes { get; set; } = null!;
-        public DbSet<Comment> Comments { get; set; } = null!;
-        public DbSet<Ingredient> Ingredients { get; set; } = null!;
-        public DbSet<IngredientToRecipe> IngredientToRecipes { get; set; } = null!;
-        public DbSet<PhotoToRecipe> PhotoToRecipes { get; set; } = null!;
-        public DbSet<Otp> Otps { get; set; } = null!;
-        public DbSet<Auth> Auths { get; set; } = null!;
+        public DbSet<User> User { get; set; } = null!;
+        public DbSet<Category> Category { get; set; } = null!;
+        public DbSet<Recipe> Recipe { get; set; } = null!;
+        public DbSet<Comment> Comment { get; set; } = null!;
+        public DbSet<Ingredient> Ingredient { get; set; } = null!;
+        public DbSet<IngredientToRecipe> IngredientToRecipe { get; set; } = null!;
+        public DbSet<PhotoToRecipe> PhotoToRecipe { get; set; } = null!;
+        public DbSet<Otp> Otp { get; set; } = null!;
+        public DbSet<Auth> Auth { get; set; } = null!;
 
         public static DbAppContext MakeContext() => new DbAppContext();
 
