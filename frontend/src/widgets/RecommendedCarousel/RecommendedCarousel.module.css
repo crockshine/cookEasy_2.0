@@ -1,0 +1,48 @@
+.recommendation{
+    --card-border-radius: 35px;
+    --badge-height: calc(var(--card-border-radius) - var(--small-padding)); /*высота бэйджа не превышает высоту скругления*/
+
+    position: relative;
+    height: 25vh;
+
+    border-radius: var(--card-border-radius);
+    padding: var(--small-padding);
+
+    background-color: #FFEEDE;
+}
+
+.badge{
+    position: absolute;
+    width: 25%;
+    height: var(--badge-height);
+
+    /*правило для внутренних скруглений*/
+    border-radius: calc(var(--card-border-radius) + var(--small-padding)) 0
+                    calc(var(--card-border-radius) + var(--small-padding)) 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #FFAB56;
+}
+
+.infoAboutRecommendation{
+    width: 50%;
+    position: absolute;
+    bottom: var(--small-padding); /*позиция по нижнему и левому паддингу*/
+    left: var(--small-padding);
+
+    height: calc(100% - var(--badge-height) - var(--small-padding)*2); /*учет высоты бэйджа и Y-паддингов*/
+    padding: var(--big-padding);/*отступ от краев*/
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.timing{
+    font-size: 22px;
+    font-weight: 500;
+}
