@@ -1,5 +1,5 @@
 'use client'
-import styles from './OTPForm.module.css'
+import styles from './OTPForm.module.css';
 import React, {useActionState, useEffect, useState} from 'react';
 import {Button} from "@/src/components/ui/button";
 import {useRouter} from "next/navigation";
