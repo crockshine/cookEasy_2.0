@@ -1,5 +1,4 @@
 .recommendation{
-    --card-border-radius: 35px;
     --badge-height: calc(var(--card-border-radius) - var(--small-padding)); /*высота бэйджа не превышает высоту скругления*/
 
     position: relative;

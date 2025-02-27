@@ -1,0 +1,32 @@
+.wrapper{
+    width: 100%;
+    height: max-content;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    gap: var(--small-padding);
+    display: flex;
+}
+
+.category{
+    text-wrap: none;
+    white-space: nowrap;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: var(--small-padding);
+
+    padding: var(--small-padding);
+    border-radius: 16px;
+}
+
+.imageBlock{
+    height: 100%;
+    width: 32px;
+}
+
+.imageBlock img{
+    height: 100%;
+    object-fit: cover;
+}
