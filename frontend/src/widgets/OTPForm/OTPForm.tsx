@@ -3,7 +3,7 @@ import styles from './OTPForm.module.css'
 import React, {useActionState, useEffect, useState} from 'react';
 import {Button} from "@/src/components/ui/button";
 import {useRouter} from "next/navigation";
-import OtpInput from "@/src/components/shared/OTP/OTPInput";
+import OtpInput from "@/src/components/customised/OTP/OTPInput";
 import {checkOTP} from "@/src/api/otp";
 import {ArrowLeft} from "lucide-react";
 

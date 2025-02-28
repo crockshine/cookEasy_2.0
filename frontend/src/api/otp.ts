@@ -6,6 +6,6 @@ export async function checkOTP ({otp}: string){
             resolve('')
         },2000)
     })
-
+    
     console.log('успех')
 }

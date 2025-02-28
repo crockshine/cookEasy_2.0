@@ -1,3 +1,10 @@
+.infoBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .form{
     width: 100%;
     display: flex;
@@ -14,5 +21,11 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
+}
+
+.arrowLeft{
+    position: absolute;
+    top: 16px;
+    left: 16px;
 }
 

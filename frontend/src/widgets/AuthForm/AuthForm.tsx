@@ -1,8 +1,8 @@
 'use client'
 import styles from './AuthForm.module.css'
 import React, {useActionState} from 'react';
-import SignUp from "@/src/widgets/SignUp/SignUp";
-import SignIn from "@/src/widgets/SignIn/SignIn";
+import SignUp from "@/src/components/shared/SignUp/SignUp";
+import SignIn from "@/src/components/shared/SignIn/SignIn";
 import {Button} from "@/src/components/ui/button";
 import {useRouter} from "next/navigation";
 import {SignUpUser} from "@/src/api/sign-up";
@@ -70,7 +70,6 @@ const AuthForm = ({setIsSignUp, isSignUp}: IAuthFormProps) => {
             }
 
             {errorMessage}
-
             <div className={styles.groupContainer}>
                 <Button variant="todo" type='submit' disabled={isPending} className={'w-full'}>
                     <b>Продолжить</b>

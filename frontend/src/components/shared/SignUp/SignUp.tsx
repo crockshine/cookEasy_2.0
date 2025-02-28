@@ -1,19 +1,17 @@
 import styles from '@/src/widgets/AuthForm/AuthForm.module.css'
-import InputWithLabel from "@/src/components/shared/InputWithLabel/InputWithLabel";
+import CustomInput from "@/src/components/customised/Input/Input";
 
 const SignUp = () => {
     return (
         <div className={styles.groupContainer}>
-            <InputWithLabel
-                label={'Как Вас зовут?'}
-                placeholder={'Овсянка Булкова'}
+            <CustomInput
+                placeholder={'Как Вас зовут?'}
                 name={'name'}
                 type={'text'}
                 required={true}
             />
-            <InputWithLabel
-                label={'Электронная почта'}
-                placeholder={'кухня_2007@mail.ru'}
+            <CustomInput
+                placeholder={'Электронная почта'}
                 name={'email'}
                 type={'email'}
                 required={true}
