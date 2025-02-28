@@ -7,6 +7,9 @@
 
     gap: var(--small-padding);
     display: flex;
+
+    top: var(--small-padding);
+    position: sticky;
 }
 
 .category{

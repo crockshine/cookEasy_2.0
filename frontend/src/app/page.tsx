@@ -2,6 +2,8 @@ import styles from './page.module.css'
 import RecommendedCarousel from "@/src/widgets/RecommendedCarousel/RecommendedCarousel";
 import CategorySelection from "@/src/widgets/CategorySelection/CategorySelection";
 import {ICategory} from "@/src/types/category";
+import PaddingLayout from "@/src/layouts/PaddingLayout/PaddingLayout";
+import RecipeList from "@/src/widgets/RecipeList/RecipeList";
 
 export default function Home() {
     const categories: ICategory[] = [
@@ -27,8 +29,16 @@ export default function Home() {
 
     return (
         <div className={styles.homeScreen}>
-            <RecommendedCarousel/>
-            <CategorySelection categories={categories}/>
+            <PaddingLayout>
+                <RecommendedCarousel/>
+            </PaddingLayout>
+
+            <PaddingLayout className={styles.stickyContainer}>
+                <CategorySelection categories={categories}/>
+                <RecipeList/>
+
+            </PaddingLayout>
+
         </div>
     );
 }

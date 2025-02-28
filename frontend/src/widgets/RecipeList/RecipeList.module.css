@@ -1,0 +1,14 @@
+.wrapper{
+    width: 100%;
+    border: 1px red solid;
+    overflow-y: auto;
+    border-radius: var(--card-border-radius) var(--card-border-radius) 0 0;
+    background-color: hsl(var(--secondary));
+    padding: var(--small-padding);
+}
+
+.recipeList{
+    border: 1px #ff7676 solid;
+    width: 100%;
+    height: 1000px;
+}
