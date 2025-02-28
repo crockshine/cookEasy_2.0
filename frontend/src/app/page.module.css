@@ -1,0 +1,9 @@
+.homeScreen{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: var(--small-padding);
+    gap: var(--small-padding);
+}

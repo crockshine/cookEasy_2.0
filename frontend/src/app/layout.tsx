@@ -1,4 +1,7 @@
-import "../styles/globals.css";
+import "../styles/tw-globals.css";
+import "../styles/fonts-globals.css";
+import "../styles/gap-globals.css";
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
