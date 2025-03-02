@@ -1,9 +1,8 @@
-"use server"
 
 interface ISignInData{
     email: string,
 }
-export async function SignInUser ({email, name}:ISignInData){
+export async function SignInUser ({email}:ISignInData){
     await new Promise((resolve) => {
         setTimeout(() => {
             resolve('')

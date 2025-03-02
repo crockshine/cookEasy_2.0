@@ -1,8 +1,8 @@
 'use client'
 import styles from './layout.module.css'
-import React, {useEffect, useRef} from "react";
+import React, {ReactNode, useEffect, useRef} from "react";
 import {usePathname} from "next/navigation";
-const layout = ({children}) => {
+const layout = ({children}: {children: ReactNode}) => {
     const pathname = usePathname()
     const circleBlock = useRef<HTMLDivElement | null>(null)
 

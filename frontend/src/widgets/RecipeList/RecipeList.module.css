@@ -4,7 +4,9 @@
     overflow-y: auto;
     border-radius: var(--card-border-radius) var(--card-border-radius) 0 0;
     background-color: hsl(var(--secondary));
+
     padding: var(--small-padding);
+    position: relative;
 }
 
 .recipeList{

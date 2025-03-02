@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<resources>
-    <string name="app_name">CookEasy</string>
-    <string name="title_activity_main">CookEasy</string>
-    <string name="package_name">com.cookeasy.app</string>
-    <string name="custom_url_scheme">com.cookeasy.app</string>
-</resources>

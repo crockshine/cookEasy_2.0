@@ -1,4 +1,4 @@
-package com.cookeasy.app;
+package com.cookEasy.app;
 
 import com.getcapacitor.BridgeActivity;
 

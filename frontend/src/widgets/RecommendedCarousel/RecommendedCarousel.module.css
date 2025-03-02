@@ -1,10 +1,15 @@
+.carousel{
+    width: 100%;
+    padding: 0  var(--small-padding) 0 var(--small-padding);
+}
+
 .recommendation{
     --badge-height: calc(var(--card-border-radius) - var(--small-padding)); /*высота бэйджа не превышает высоту скругления*/
 
     height: 25vh;
 
     border-radius: var(--card-border-radius);
-    padding: var(--small-padding);
+    margin-top: var(--small-padding);
 
     background-color: #FFEEDE;
 }

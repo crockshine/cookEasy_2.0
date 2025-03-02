@@ -1,4 +1,3 @@
-"use server"
 
 interface ISignUpData{
     email: string,

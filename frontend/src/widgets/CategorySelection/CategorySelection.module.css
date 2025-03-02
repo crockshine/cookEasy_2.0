@@ -1,18 +1,21 @@
 .wrapper{
     width: 100%;
-    height: max-content;
+    height: 12vh;
 
     overflow-x: auto;
     overflow-y: hidden;
 
     gap: var(--small-padding);
-    display: flex;
+    padding: 0  var(--small-padding) 0 var(--small-padding);
+    margin-top: var(--small-padding);
+    margin-bottom: var(--small-padding);
 
-    top: var(--small-padding);
-    position: sticky;
+    display: flex;
 }
 
 .category{
+    height: 100%;
+
     text-wrap: none;
     white-space: nowrap;
     flex: 1;
@@ -26,10 +29,11 @@
 
 .imageBlock{
     height: 100%;
-    width: 32px;
+    width: max-content;
 }
 
 .imageBlock img{
     height: 100%;
+    width: 100%;
     object-fit: cover;
 }

@@ -1,10 +1,24 @@
 import styles from './RecipeList.module.css'
-import React from 'react';
+import React, {useRef} from 'react';
 
-const RecipeList = () => {
+interface IRecipeListProps {
+    isScroll: boolean,
+    ref: React.Ref<HTMLDivElement | null>
+}
+
+const RecipeList = ({isScroll, ref}: IRecipeListProps) => {
+
     return (
-        <div className={styles.wrapper}>
-            <div className={styles.recipeList}>
+        <div
+            className={styles.wrapper}
+            style={
+                isScroll
+                    ? {overflowY: 'auto'}
+                    : {overflowY: 'hidden'}
+            }
+            ref={ref}
+        >
+            <div className={styles.recipeList} >
 
             </div>
         </div>

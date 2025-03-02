@@ -3,25 +3,13 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-
-    gap: var(--small-padding);
-
-    padding-top: var(--small-padding);
 }
-
-/*.paddingLayout{*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    gap: var(--small-padding);*/
-
-/*}*/
 
 .stickyContainer{
     height: 100%;
+    scroll-snap-align: start;
     display: flex;
     flex-direction: column;
-    gap: var(--small-padding);
-
-    top: var(--small-padding);
     position: sticky;
+
 }

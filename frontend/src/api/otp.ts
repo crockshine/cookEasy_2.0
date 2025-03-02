@@ -1,6 +1,5 @@
-"use server"
+export async function checkOTP (otp: string){
 
-export async function checkOTP ({otp}: string){
     await new Promise((resolve) => {
         setTimeout(() => {
             resolve('')

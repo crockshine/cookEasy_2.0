@@ -1,4 +1,3 @@
-import styles from './OtpInput.module.css'
 import React from 'react';
 import {
     InputOTP,
